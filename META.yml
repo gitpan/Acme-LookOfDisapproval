@@ -3,11 +3,17 @@ abstract: 'send warnings with ಠ_ಠ'
 author:
   - 'Karen Etheridge <ether@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 0
   File::Find: 0
   File::Temp: 0
+  Pod::Wordlist::hanekomu: 0
+  Test::CPAN::Meta: 0
   Test::CheckDeps: 0.002
+  Test::EOL: 0
   Test::More: 0.94
+  Test::NoTabs: 0
+  Test::Pod: 1.41
+  Test::Spelling: 0.12
+  Test::Warnings: 0.005
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 1
@@ -24,4 +30,4 @@ no_index:
 requires:
   Exporter: 0
   utf8: 0
-version: 0.001
+version: 0.002

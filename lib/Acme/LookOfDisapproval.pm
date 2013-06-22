@@ -3,7 +3,7 @@ use warnings;
 package Acme::LookOfDisapproval;
 # ABSTRACT: send warnings with ಠ_ಠ
 {
-    $Acme::LookOfDisapproval::VERSION = '0.001';
+    $Acme::LookOfDisapproval::VERSION = '0.002';
 }
 use utf8;
 use Exporter;
@@ -30,7 +30,7 @@ Acme::LookOfDisapproval  - send warnings with ಠ_ಠ
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -81,6 +81,8 @@ L<utf8> pragma and the C<ಠ_ಠ> symbol. However, that's just silly when we can
 call C<import> directly on L<utf8> (it's a pragma, so the caller doesn't
 matter -- only when it is called: during the caller's compilation cycle),
 and then we can export our symbol by using L<goto> to jump to L<Exporter>.
+
+=for stopwords dzil utf8
 
 I also discovered while writing this distribution that L<Dist::Zilla> is not
 able to munge files with utf8 characters, therefore I had to switch packaging
