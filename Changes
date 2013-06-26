@@ -1,5 +1,9 @@
 Revision history for Acme-LookOfDisapproval
 
+0.003     2013-06-26
+          - minimum perl version bumped to 5.16.0 (see
+            https://metacpan.org/module/perl5160delta#Unicode-Symbol-Names)
+
 0.002     2013-06-22
           - add missing prereqs to metadata
 
