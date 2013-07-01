@@ -14,9 +14,7 @@ build_requires:
   Test::Pod: 1.41
   Test::Spelling: 0.12
   Test::Warnings: 0.005
-configure_requires:
-  ExtUtils::MakeMaker: 6.30
-dynamic_config: 1
+dynamic_config: 0
 generated_by: 'ExtUtils::MakeMaker version 6.68, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
@@ -29,5 +27,11 @@ no_index:
     - inc
 requires:
   Exporter: 0
+  perl: 5.016000
   utf8: 0
-version: 0.003
+resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Acme-LookOfDisapproval
+  homepage: https://github.com/karenetheridge/Acme-LookOfDisapproval
+  repository: https://github.com/karenetheridge/Acme-LookOfDisapproval.git
+version: 0.004
+x_authority: cpan:ETHER

@@ -11,6 +11,7 @@ my %WriteMakefileArgs = (
     LICENSE       => 'perl',
 
     PL_FILES      => {},
+    MIN_PERL_VERSION => '5.016000',
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => '6.30',
     },
@@ -32,6 +33,23 @@ my %WriteMakefileArgs = (
         'Test::EOL' => 0,
         'Test::NoTabs' => 0,
         'Test::Pod' => '1.41',
+    },
+    META_MERGE => {
+        'meta-spec' => { version => 2 },
+        dynamic_config => 0,
+        resources => {
+            bugtracker => {
+                mailto => 'bug-Acme-LookOfDisapproval@rt.cpan.org',
+                web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Acme-LookOfDisapproval',
+            },
+            homepage => 'https://github.com/karenetheridge/Acme-LookOfDisapproval',
+            repository => {
+                type => 'git',
+                url => 'https://github.com/karenetheridge/Acme-LookOfDisapproval.git',
+                web => 'https://github.com/karenetheridge/Acme-LookOfDisapproval',
+            }
+        },
+        x_authority => 'cpan:ETHER',
     },
 );
 

@@ -3,8 +3,12 @@ use warnings;
 package Acme::LookOfDisapproval;
 # ABSTRACT: send warnings with ಠ_ಠ
 {
-    $Acme::LookOfDisapproval::VERSION = '0.003';
+    $Acme::LookOfDisapproval::VERSION = '0.004';
 }
+BEGIN {
+    our $AUTHORITY = 'cpan:ETHER';
+}
+
 use utf8;
 use Exporter;
 our @EXPORT = ('ಠ_ಠ');
@@ -30,7 +34,7 @@ Acme::LookOfDisapproval  - send warnings with ಠ_ಠ
 
 =head1 VERSION
 
-version 0.002
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -85,11 +89,12 @@ and then we can export our symbol by using L<goto> to jump to L<Exporter>.
 =for stopwords dzil utf8
 
 I also discovered while writing this distribution that L<Dist::Zilla> is not
-able to munge files with utf8 characters, therefore I had to switch packaging
-this distribution to vanilla L<ExtUtils::MakeMaker>; also, a number of the
+able to munge files with utf8 characters, therefore I had to switch to packaging
+this distribution with vanilla L<ExtUtils::MakeMaker>; also, a number of the
 author and release tests that would have been added by dzil automatically
-don't work either (for example, see C<t/00-compile.t> -- C<< eval "require $_" >>
-dies when operating on a filename containing utf8 characters.
+didn't work either (for example, see C<t/00-compile.t> -- C<< qx(^$X "require $_") >>
+both needs the C<:binmode> or C<:encoding(UTF-8)> layer applied to C<STDOUT>, and
+requires the L<utf8> pragma applied in the sub-perl (leading to more patches).
 
 =head1 SUPPORT
 
