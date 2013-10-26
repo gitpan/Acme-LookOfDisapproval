@@ -1,21 +1,29 @@
+Build.PL
+CONTRIBUTING
 Changes
-lib/Acme/LookOfDisapproval.pm
-lib/Acme/ಠ_ಠ.pm
+INSTALL
 LICENSE
+MANIFEST
+META.json
+META.yml
 Makefile.PL
-MANIFEST			This list of files
-MANIFEST.SKIP
-t/00-check-deps.t
-t/00-compile.t
+README
+README.md
+dist.ini
+lib/Acme/LookOfDisapproval.pm
+t/00-report-prereqs.t
 t/01-basic.t
-t/02-Acme-ಠ_ಠ.t
+weaver.ini
+xt/author/00-compile.t
 xt/author/pod-spell.t
-xt/release/bump_version.t
 xt/release/changes_has_content.t
 xt/release/cpan-changes.t
 xt/release/distmeta.t
 xt/release/eol.t
+xt/release/kwalitee.t
+xt/release/mojibake.t
 xt/release/no-tabs.t
+xt/release/pod-no404s.t
 xt/release/pod-syntax.t
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
+xt/release/test-version.t
+xt/release/unused-vars.t

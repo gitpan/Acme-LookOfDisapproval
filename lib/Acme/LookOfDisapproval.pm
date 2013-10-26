@@ -1,15 +1,17 @@
 use strict;
 use warnings;
-package Acme::LookOfDisapproval;
-# ABSTRACT: send warnings with ಠ_ಠ
-{
-    $Acme::LookOfDisapproval::VERSION = '0.004';
-}
-BEGIN {
-    our $AUTHORITY = 'cpan:ETHER';
-}
-
 use utf8;
+package Acme::LookOfDisapproval;
+BEGIN {
+  $Acme::LookOfDisapproval::AUTHORITY = 'cpan:ETHER';
+}
+{
+  $Acme::LookOfDisapproval::VERSION = '0.005';
+}
+# git description: v0.004-7-g54f5481
+
+# ABSTRACT: send warnings with ಠ_ಠ
+
 use Exporter;
 our @EXPORT = ('ಠ_ಠ');
 
@@ -22,19 +24,22 @@ sub import
 sub ಠ_ಠ { goto &CORE::warn }
 
 1;
+
 __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
+
+=for :stopwords Karen Etheridge unicode dzil utf8 irc
 
 =head1 NAME
 
-Acme::LookOfDisapproval  - send warnings with ಠ_ಠ
+Acme::LookOfDisapproval - send warnings with ಠ_ಠ
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
@@ -57,8 +62,6 @@ Behaves identically to L<perlfunc/warn>.
 =back
 
 =head1 BACKGROUND
-
-=for stopwords unicode
 
 I wrote this as an exercise in using unicode in code, not just in a string.
 Then, it became an interesting learning experience in how to cleanly map to a
@@ -86,8 +89,6 @@ call C<import> directly on L<utf8> (it's a pragma, so the caller doesn't
 matter -- only when it is called: during the caller's compilation cycle),
 and then we can export our symbol by using L<goto> to jump to L<Exporter>.
 
-=for stopwords dzil utf8
-
 I also discovered while writing this distribution that L<Dist::Zilla> is not
 able to munge files with utf8 characters, therefore I had to switch to packaging
 this distribution with vanilla L<ExtUtils::MakeMaker>; also, a number of the
@@ -98,8 +99,6 @@ requires the L<utf8> pragma applied in the sub-perl (leading to more patches).
 
 =head1 SUPPORT
 
-=for stopwords irc
-
 Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=Acme-LookOfDisapproval>
 (or L<bug-Acme-LookOfDisapproval@rt.cpan.org|mailto:bug-Acme-LookOfDisapproval@rt.cpan.org>).
 I am also usually active on irc, as 'ether' at C<irc.perl.org>.
@@ -109,6 +108,8 @@ I am also usually active on irc, as 'ether' at C<irc.perl.org>.
 =over
 
 =item * L<the Look of Disapproval Meme|http://knowyourmeme.com/memes/%E0%B2%A0_%E0%B2%A0-look-of-disapproval>
+
+=item * L<lambda> - another example of unicode sub names
 
 =back
 

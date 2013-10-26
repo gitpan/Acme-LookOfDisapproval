@@ -2,11 +2,9 @@
 
 use Test::More tests => 2;
 
-use Acme::LookOfDisapproval;
-
 note 'Checking Changes';
 my $changes_file = 'Changes';
-my $newver = Acme::LookOfDisapproval->VERSION;
+my $newver = '0.005';
 my $trial_token = '-TRIAL';
 
 SKIP: {
