@@ -2,14 +2,14 @@ use strict;
 use warnings;
 use utf8;
 package Acme::LookOfDisapproval;
+{
+  $Acme::LookOfDisapproval::VERSION = '0.006';
+}
+# git description: v0.005-6-g478008e
+
 BEGIN {
   $Acme::LookOfDisapproval::AUTHORITY = 'cpan:ETHER';
 }
-{
-  $Acme::LookOfDisapproval::VERSION = '0.005';
-}
-# git description: v0.004-7-g54f5481
-
 # ABSTRACT: send warnings with ಠ_ಠ
 
 use Exporter;
@@ -39,7 +39,7 @@ Acme::LookOfDisapproval - send warnings with ಠ_ಠ
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
@@ -51,15 +51,11 @@ version 0.005
 Use C<ಠ_ಠ> whenever you would use C<warn>, to express your profound
 disapproval.
 
-=head1 FUNCTIONS/METHODS
+=head1 FUNCTIONS
 
-=over 4
-
-=item * C<ಠ_ಠ>
+=head2 C<ಠ_ಠ>
 
 Behaves identically to L<perlfunc/warn>.
-
-=back
 
 =head1 BACKGROUND
 
@@ -105,11 +101,15 @@ I am also usually active on irc, as 'ether' at C<irc.perl.org>.
 
 =head1 SEE ALSO
 
-=over
+=over 4
 
-=item * L<the Look of Disapproval Meme|http://knowyourmeme.com/memes/%E0%B2%A0_%E0%B2%A0-look-of-disapproval>
+=item *
 
-=item * L<lambda> - another example of unicode sub names
+L<the Look of Disapproval Meme|http://knowyourmeme.com/memes/%E0%B2%A0_%E0%B2%A0-look-of-disapproval>
+
+=item *
+
+L<lambda> - another example of unicode sub names
 
 =back
 

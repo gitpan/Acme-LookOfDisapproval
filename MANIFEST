@@ -10,9 +10,13 @@ Makefile.PL
 README
 README.md
 dist.ini
+inc/Metadata.pm
+inc/MungeInstallers.pm
 lib/Acme/LookOfDisapproval.pm
+lib/Acme/o_o.pm
 t/00-report-prereqs.t
 t/01-basic.t
+t/02-Acme-o_o.t
 weaver.ini
 xt/author/00-compile.t
 xt/author/pod-spell.t
@@ -25,5 +29,4 @@ xt/release/mojibake.t
 xt/release/no-tabs.t
 xt/release/pod-no404s.t
 xt/release/pod-syntax.t
-xt/release/test-version.t
-xt/release/unused-vars.t
+xt/release/portability.t

@@ -17,6 +17,7 @@ my @modules = qw(
   Exporter
   ExtUtils::MakeMaker
   File::Spec::Functions
+  JSON
   List::Util
   Module::Build::Tiny
   Test::More
